@@ -1,5 +1,10 @@
 import React from 'react';
 import MenuItem from '../MenuItem/MenuItem';
+import Curry from '../../assets/images/curry.png';
+import Beverages from '../../assets/images/beverages.png';
+import Desserts from '../../assets/images/desserts.png';
+import Veg from '../../assets/images/veg.png';
+import NonVeg from '../../assets/images/nonveg.png';
 class Directory extends React.Component {
 
     constructor () {
@@ -8,36 +13,36 @@ class Directory extends React.Component {
         this.state = {
             sections: [
                 {
-                  title: 'hats',
-                  imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+                  title: 'Curry',
+                  imageUrl: Curry,
                   id: 1,
-                  linkUrl: 'hats'
+                  linkUrl: 'Curry'
                 },
                 {
-                  title: 'jackets',
-                  imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+                  title: 'Beverages',
+                  imageUrl: Beverages,
                   id: 2,
-                  linkUrl: ''
+                  linkUrl: 'Beverages'
                 },
                 {
-                  title: 'sneakers',
-                  imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+                  title: 'Desserts',
+                  imageUrl: Desserts,
                   id: 3,
-                  linkUrl: ''
+                  linkUrl: 'Desserts'
                 },
                 {
-                  title: 'womens',
-                  imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+                  title: 'Veg',
+                  imageUrl: Veg,
                   size: 'large',
                   id: 4,
-                  linkUrl: ''
+                  linkUrl: 'Veg'
                 },
                 {
-                  title: 'mens',
-                  imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+                  title: 'Non-Veg',
+                  imageUrl: NonVeg,
                   size: 'large',
                   id: 5,
-                  linkUrl: ''
+                  linkUrl: 'Non-Veg'
                 }
               ]
         } 
@@ -47,8 +52,8 @@ class Directory extends React.Component {
 
         return(
             <div className = "directory-menu"> 
-                {this.state.sections.map(({ id, title , imageUrl }) => (
-                    <MenuItem key={id} title = {title} imageUrl = {imageUrl}/>
+                {this.state.sections.map(({ id, title , imageUrl ,size}) => (
+                    <MenuItem key={id} title = {title} imageUrl = {imageUrl} size={size}/>
                     ))}
             </div>
         
