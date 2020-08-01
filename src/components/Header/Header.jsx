@@ -20,6 +20,7 @@ const Header = ({currentUser,hidden}) => (
       <Link to = "/">
         <FastfoodIcon className="logo-container" />
       </Link>
+      <div className="title"> CurryLicious </div>
       <div className="options">
         <Link className="option" to="/shopitem">BUY DISH</Link>
         <Link className="option" to="/">HOME</Link>

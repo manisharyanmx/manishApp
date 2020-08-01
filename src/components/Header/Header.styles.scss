@@ -5,10 +5,20 @@
     justify-content: space-between;
     margin-bottom: 25px;
   
+    .title{
+      width: 50%;
+      height: 100%;
+      margin-top: 10px;
+      font-size: large;
+      justify-content: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      position: relative;
+    }
     .logo-container {
       height: 50%;
       width: 50px;
       justify-content: flex-start;
+      margin-top:5px;
     }
   
     .options {
