@@ -6,8 +6,8 @@ import {signInWithGoogle, auth} from '../../Firebase/firebase.utils';
 
 class SignIn extends React.Component {
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
     
         this.state = {
             email:'',
@@ -22,6 +22,7 @@ class SignIn extends React.Component {
         try {
             await auth.signInWithEmailAndPassword(email, password);
             this.setState({email:'',password:''})
+            console.log(this.props);
         } catch (error) {
             console.log('error', error)
         }

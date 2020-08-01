@@ -12,22 +12,26 @@ class Directory extends React.Component {
 
         this.state = {
             sections: [
+               
                 {
                   title: 'Curry',
                   imageUrl: Curry,
                   id: 1,
+                  size: 'small',
                   linkUrl: 'Curry'
                 },
                 {
                   title: 'Beverages',
                   imageUrl: Beverages,
                   id: 2,
+                  size: 'small',
                   linkUrl: 'Beverages'
                 },
                 {
                   title: 'Desserts',
                   imageUrl: Desserts,
                   id: 3,
+                  size: 'small',
                   linkUrl: 'Desserts'
                 },
                 {
@@ -43,7 +47,7 @@ class Directory extends React.Component {
                   size: 'large',
                   id: 5,
                   linkUrl: 'Non-Veg'
-                }
+                }, 
               ]
         } 
     };
